@@ -1,0 +1,90 @@
+.buttonContainer {
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+}
+
+.buttonContainer button {
+  font-size: 2.5rem;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 5px 15px;
+}
+.sidebarContainer {
+  width: 15rem;
+  height: 100%;
+
+  background: var(--white);
+
+  position: fixed;
+  transition: 750ms;
+  left: -100%;
+
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  z-index: 1;
+
+  -webkit-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sidebarContainer.toggle {
+  left: 0;
+  transition: 350ms;
+}
+
+.sidebarContainer img {
+  width: 100%;
+  height: auto;
+
+  margin-top: 5rem;
+
+  cursor: pointer;
+}
+
+.sidebarContainer ul {
+  width: 100%;
+  height: 100%;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 50%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.sidebarContainer ul li {
+  width: 100%;
+  text-align: center;
+
+  padding: 1.2rem;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 1.5rem;
+}
+
+.sidebarContainer ul li:hover {
+  color: var(--white);
+  font-weight: 600;
+  background: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .sidebarContainer {
+    width: 18rem;
+  }
+}

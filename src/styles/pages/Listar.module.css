@@ -1,0 +1,56 @@
+.listContainer {
+  width: 100%;
+  height: 100%;
+
+  border: 3px solid var(--primary-color);
+  border-radius: 8px;
+
+  -webkit-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
+
+  overflow-y: scroll;
+}
+
+.listContainer table {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+
+  border-collapse: collapse;
+}
+
+.listContainer table thead tr th {
+  background: var(--primary-color);
+  font-size: 1.5rem;
+
+  padding: 0.5rem;
+
+  color: var(--white);
+  width: auto;
+}
+
+.listContainer table tbody {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.listContainer table tbody tr {
+  background-color: var(--background);
+  border-top: 20px solid transparent;
+}
+
+.listContainer table tbody tr td {
+  text-align: center;
+  font-size: 1.25rem;
+
+  border-right: 2px solid var(--primary-color);
+}
+
+.listContainer table tbody tr td:last-child {
+  border-right: none;
+}
+
+.listContainer table tbody tr td svg {
+  color: var(--primary-color);
+}

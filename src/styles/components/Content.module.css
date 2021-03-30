@@ -1,0 +1,31 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 65%;
+  padding-top: 3rem;
+  max-width: 950px;
+  max-height: 80vh;
+
+  margin: 5% auto auto auto;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    width: 100%;
+
+    max-width: 70%;
+
+    margin: 3rem auto auto auto;
+  }
+}
+
+@media (max-width: 770px) {
+  .content {
+    max-width: 85%;
+    max-height: 90vh;
+  }
+}

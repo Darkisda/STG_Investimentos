@@ -1,0 +1,58 @@
+.signInContainer {
+  width: 100%;
+  height: 100vh;
+
+  margin: 0 auto;
+
+  max-width: 1000px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.signInContainer h3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.signInContainer form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin: 20% auto;
+
+  border: 3px solid #bdbdbd;
+  border-radius: 8px;
+
+  padding: 1.5rem 1.25rem;
+}
+
+.signInContainer form h2 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.signInContainer form button {
+  margin-top: 2.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.signInContainer form a {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.signInContainer a h2 {
+  margin-top: 25%;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
